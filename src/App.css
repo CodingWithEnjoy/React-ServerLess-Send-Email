@@ -1,38 +1,126 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Vazirmatn", sans-serif;
   text-align: center;
+  color: azure;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: #141414;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.form__group {
+  position: relative;
+  padding: 20px 0 0;
+  margin-top: 26px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.form__field {
+  width: 500px;
+  border: none;
+  border-bottom: 2px solid #ffffff;
+  outline: 0;
+  font-size: 17px;
+  color: #fff;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.form__field::placeholder {
+  color: transparent;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 17px;
+  cursor: text;
+  top: 20px;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 17px;
+  color: #ffffff;
+  pointer-events: none;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #decbff, #7112ff);
+  border-image-slice: 1;
+}
+
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 17px;
+  color: #decbff;
+  font-weight: 700;
+}
+
+.form__field:required,
+.form__field:invalid {
+  box-shadow: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+input[type="submit"] {
+  margin-top: 30px;
+  outline: none;
+  border: none;
+  padding: 5px 40px;
+  color: #ffffff;
+  font-size: larger;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+  border: 2px solid azure;
+  background: transparent;
+}
+
+input[type="submit"]:hover {
+  background: azure;
+  color: #000000;
+}
+
+@media (max-width: 580px) {
+  * {
+    max-width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .form__field {
+    width: 300px;
+  }
+
+  h1 {
+    font-size: 22px;
   }
 }
