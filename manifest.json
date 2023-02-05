@@ -1,0 +1,8 @@
+{
+  "short_name": "Send Email With React",
+  "name": "Send Email With React And EmailJs",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

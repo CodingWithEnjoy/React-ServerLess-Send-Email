@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/React-ServerLess-Send-Email/static/css/main.b24bf1d0.css",
+    "main.js": "/React-ServerLess-Send-Email/static/js/main.3cce5cd5.js",
+    "index.html": "/React-ServerLess-Send-Email/index.html",
+    "main.b24bf1d0.css.map": "/React-ServerLess-Send-Email/static/css/main.b24bf1d0.css.map",
+    "main.3cce5cd5.js.map": "/React-ServerLess-Send-Email/static/js/main.3cce5cd5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b24bf1d0.css",
+    "static/js/main.3cce5cd5.js"
+  ]
+}
